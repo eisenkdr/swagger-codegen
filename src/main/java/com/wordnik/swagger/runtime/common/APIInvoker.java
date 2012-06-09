@@ -246,7 +246,7 @@ public class APIInvoker {
             }
         } catch (IOException ioe) {
         	String[] args = new String[]{response, inputClassName.toString()};
-            throw new APIException(APIExceptionCodes.ERROR_CONVERTING_JSON_TO_JAVA, args, "Error in coversting response json value to java object : " + ioe.getMessage(), ioe);
+            throw new APIException(APIExceptionCodes.ERROR_CONVERTING_JSON_TO_JAVA, args, "Error in converting response json value to java object : " + ioe.getMessage(), ioe);
         }
 	}
 
